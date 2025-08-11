@@ -1,0 +1,52 @@
+# Node / package managers
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Next.js / React build artifacts
+.next/
+.next/cache/
+out/
+.swc/
+*.tsbuildinfo
+
+# General build outputs
+dist/
+build/
+coverage/
+
+# Turbopack / Monorepo / Hosting
+.turbo/
+.vercel/
+
+# Environment files (keep an example checked in)
+.env
+.env.*
+!.env.example
+
+# Editors / OS junk
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Python (static dashboard server)
+__pycache__/
+.pytest_cache/
+.venv/
+venv/
+
+# Temp files
+tmp/
+temp/
+*.local.json
+
+# Redis (if you ever run a local instance)
+dump.rdb
+appendonly.aof
+*.aof.*

@@ -1,0 +1,17 @@
+{
+  "name": "vitalsense-consumer",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "consumer.js",
+  "scripts": {
+    "start": "node consumer.js",
+    "create-index": "node create_index.js",
+    "query": "node query_critical.js",
+    "watch-alerts": "node alert_watcher.js",
+    "ws-proxy": "node ws_proxy.js"
+  },
+  "dependencies": {
+    "redis": "^4.0.0",
+    "ws": "^8.13.0"
+  }
+}
