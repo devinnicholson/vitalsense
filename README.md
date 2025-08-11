@@ -8,7 +8,6 @@ Pub/Sub, and a beautiful Tailwind/Next.js dashboard.
 ## Prerequisites
 
 - **Node.js** v16+
-- **Python 3** (for the static dashboard, optional)
 - **Redis 8** instance with modules:
 
   - RedisJSON
@@ -119,25 +118,6 @@ Proxy received: {"id":"P02","snapshot":{…}}
 
 ---
 
-## 6a. Static Dashboard (HTML/JS)
-
-Serves `dashboard/index.html` + `dashboard/app.js` over HTTP:
-
-```bash
-cd dashboard
-python3 -m http.server 8001
-```
-
-Open [http://localhost:8001](http://localhost:8001) and check DevTools ▶ Console
-for:
-
-```
-Dashboard starting…
-✅ WS open
-📬 WS message {...}
-```
-
----
 
 ## 6b. React/Next.js Dashboard
 
@@ -186,7 +166,3 @@ Opening WS…
    - Proxy logs “Proxy received”.
    - Dashboard console logs “WS open” + “WS message”.
 
----
-
-With all of these services running together, VitalSense streams vitals →
-snapshots → search → alerts → live dashboard. Good luck in the hackathon!
